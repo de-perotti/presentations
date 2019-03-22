@@ -25,8 +25,7 @@ const fonts = {
 function getTheme() {
   const theme = _.merge(createTheme(colors, fonts), themeJson);
 
-  // @ts-ignore
-  theme.screen.progress.bar.container.height = '5px';
+  _.set(theme, 'screen.progress.bar.container.height', '5px');
 
   return theme;
 }
