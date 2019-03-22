@@ -6,7 +6,7 @@ export class Cover extends React.Component {
     return (
       <Slide>
         <Heading>
-          Storybook
+          Storybookk
         </Heading>
         <Text>
           regression in the frontend

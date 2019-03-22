@@ -137,6 +137,7 @@
     "workbox-webpack-plugin": "3.6.3"
   },
   "loki": {
+    "diffingEngine": "looks-same",
     "configurations": {
       "chrome.laptop": {
         "target": "chrome.docker",
@@ -145,10 +146,6 @@
         "deviceScaleFactor": 1,
         "mobile": false,
         "fitWindow": false
-      },
-      "chrome.iphone7": {
-        "target": "chrome.docker",
-        "preset": "iPhone 7"
       }
     }
   }
