@@ -1,9 +1,9 @@
-import React from 'react';
-import {Slide, Text, Image, Heading } from "spectacle";
+import React from "react";
+import {Heading, Image, Slide, Text } from "spectacle";
 
-import Diff from '../../assets/images/diff.png';
-import BugsBunny from '../../assets/images/bugsbunny.png';
-import Snap from '../../assets/images/snap.png';
+import BugsBunny from "../../assets/images/bugsbunny.png";
+import Diff from "../../assets/images/diff.png";
+import Snap from "../../assets/images/snap.png";
 
 export class Diffs extends React.Component {
   public render() {

@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 import {Heading, Image, Slide, Text} from "spectacle";
-import LokiImg from "../../../assets/images/loki.png";
 import ItsFoss from "../../../assets/images/foss.jpg";
+import LokiImg from "../../../assets/images/loki.png";
 
 export class AllowsIt extends React.Component {
   public render() {
@@ -11,7 +11,7 @@ export class AllowsIt extends React.Component {
           A Love Story
         </Heading>
         <Text>
-          {'...Book ♡ Regression'}
+          {"...Book ♡ Regression"}
         </Text>
       </Slide>
     );

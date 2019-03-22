@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {Heading, Slide, Text} from "spectacle";
 
 export class Then extends React.Component {

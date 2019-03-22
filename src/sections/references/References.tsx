@@ -1,5 +1,5 @@
-import React from 'react';
-import { Slide, Link, Text, Heading } from 'spectacle';
+import React from "react";
+import { Heading, Link, Slide, Text } from "spectacle";
 
 export class Git extends React.Component {
   public render() {

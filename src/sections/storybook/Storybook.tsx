@@ -1,16 +1,16 @@
-import React from 'react';
-import {Heading, Slide, Text, Image, Layout, Fill, Fit} from 'spectacle';
+import React from "react";
+import {Fill, Fit, Heading, Image, Layout, Slide, Text} from "spectacle";
 
-import MinimalExample from '../../assets/images/carbon.png';
-import StorybookIssues from '../../assets/images/issues.png';
-import StorybookTests from '../../assets/images/testtypes.png';
-import ForksStars from '../../assets/images/likes.png';
-import TDDgif from '../../assets/images/storybook-addon-jest.gif';
+import MinimalExample from "../../assets/images/carbon.png";
+import StorybookIssues from "../../assets/images/issues.png";
+import ForksStars from "../../assets/images/likes.png";
+import TDDgif from "../../assets/images/storybook-addon-jest.gif";
+import StorybookTests from "../../assets/images/testtypes.png";
 
-import * as Regression from './regression/StorybookRegression';
+import * as Regression from "./regression/StorybookRegression";
 
 export {
-  Regression
+  Regression,
 };
 
 export class What extends React.Component {
@@ -22,7 +22,9 @@ export class What extends React.Component {
         </Heading>
         <Text>
           is a development environment for UI components.
-          It allows you to browse a component library, view the different states of each component, and interactively develop and test components."
+          It allows you to browse a component library,
+          view the different states of each component,
+          and interactively develop and test components."
         </Text>
         <Text>git@storybooks/storybook</Text>
       </Slide>

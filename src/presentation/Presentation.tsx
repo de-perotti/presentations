@@ -1,20 +1,20 @@
-import React from 'react';
+import React from "react";
 import {Notes, Text} from "spectacle";
 
 import { Deck } from "../components/Deck";
 
-import { Cover } from '../sections/cover/Cover';
-import { Introduction } from '../sections/introduction/Introduction';
-import { WhoAmI } from '../sections/whoami/WhoAmI';
-import { Disclaimer } from '../sections/disclaimer/Disclaimer';
+import { Cover } from "../sections/cover/Cover";
+import { Disclaimer } from "../sections/disclaimer/Disclaimer";
+import { Introduction } from "../sections/introduction/Introduction";
+import { WhoAmI } from "../sections/whoami/WhoAmI";
 
-import * as Hook from '../sections/hook/Hook';
-import * as Storybook from '../sections/storybook/Storybook';
-import * as AutomatedTests from '../sections/automated/Automated';
-import * as Code from '../sections/code/Code';
-import * as Regression from '../sections/regression/Regression';
-import * as Conclusion from '../sections/conclusion/Conclusion';
-import * as References from '../sections/references/References';
+import * as AutomatedTests from "../sections/automated/Automated";
+import * as Code from "../sections/code/Code";
+import * as Conclusion from "../sections/conclusion/Conclusion";
+import * as Hook from "../sections/hook/Hook";
+import * as References from "../sections/references/References";
+import * as Regression from "../sections/regression/Regression";
+import * as Storybook from "../sections/storybook/Storybook";
 
 export class Presentation extends React.Component {
   public render() {
@@ -69,7 +69,6 @@ export class Presentation extends React.Component {
             </Text>
           </Notes>
         </Code.StorybookIntermission>
-
 
         <Regression.What />
         <Regression.MentalHealth />

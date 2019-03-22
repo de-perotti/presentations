@@ -11,6 +11,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "lint": "tslint --project tsconfig.json -c tslint.json --format stylish 'src/**/*.{ts,tsx}'",
+    "lint-fix": "npm run -s lint -- --fix",
     "test": "node scripts/test.js",
     "test:loki": "loki test",
     "test:loki:approve": "loki approve",
@@ -133,6 +135,7 @@
     "sass-loader": "7.1.0",
     "style-loader": "0.23.1",
     "terser-webpack-plugin": "1.2.2",
+    "tslint": "^5.14.0",
     "typescript": "3.3.3333",
     "url-loader": "1.1.2",
     "webpack": "4.28.3",

@@ -1,7 +1,7 @@
-import React from 'react';
-import { Slide, Text, Heading, Code, Appear } from 'spectacle';
+import React from "react";
+import { Appear, Code, Heading, Slide, Text } from "spectacle";
 
-import LuigiPerotti from '../../assets/images/luigi-perotti.jpg';
+import LuigiPerotti from "../../assets/images/luigi-perotti.jpg";
 
 export class WhoAmI extends React.Component {
   public render() {

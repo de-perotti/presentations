@@ -1,19 +1,19 @@
-import createTheme from 'spectacle/lib/themes/default';
-import _ from 'lodash';
+import _ from "lodash";
+import createTheme from "spectacle/lib/themes/default";
 
-import themeJson from './theme.json';
+import themeJson from "./theme.json";
 
 const colors = {
-  primary: '#2f4f4f',
-  secondary: '#95a777',
-  tertiary: '#ffffff',
-  quaternary: '#ffefd5',
+  primary: "#2f4f4f",
+  secondary: "#95a777",
+  tertiary: "#ffffff",
+  quaternary: "#ffefd5",
 };
 
 const defaultFont = {
-  name: 'PT Mono',
+  name: "PT Mono",
   googleFont: true,
-  styles: ['400']
+  styles: ["400"],
 };
 
 const fonts = {
@@ -25,7 +25,7 @@ const fonts = {
 function getTheme() {
   const theme = _.merge(createTheme(colors, fonts), themeJson);
 
-  _.set(theme, 'screen.progress.bar.container.height', '5px');
+  _.set(theme, "screen.progress.bar.container.height", "5px");
 
   return theme;
 }
