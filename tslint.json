@@ -14,7 +14,8 @@
                 "limit": 120,
                 "ignore-pattern": "^import |^export {(.*?)}| svgPath =|href=|classNames\\(|\\/.*\\/[ig]?;$"
             }
-        ]
+        ],
+        "quotemark": [true, "single"]
     },
     "rulesDirectory": []
 }

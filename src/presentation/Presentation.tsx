@@ -1,20 +1,20 @@
-import React from "react";
-import {Notes, Text} from "spectacle";
+import React from 'react';
+import {Notes, Text} from 'spectacle';
 
-import { Deck } from "../components/Deck";
+import { Deck } from '../components/Deck';
 
-import { Cover } from "../sections/cover/Cover";
-import { Disclaimer } from "../sections/disclaimer/Disclaimer";
-import { Introduction } from "../sections/introduction/Introduction";
-import { WhoAmI } from "../sections/whoami/WhoAmI";
+import { Cover } from '../sections/cover/Cover';
+import { Disclaimer } from '../sections/disclaimer/Disclaimer';
+import { Introduction } from '../sections/introduction/Introduction';
+import { WhoAmI } from '../sections/whoami/WhoAmI';
 
-import * as AutomatedTests from "../sections/automated/Automated";
-import * as Code from "../sections/code/Code";
-import * as Conclusion from "../sections/conclusion/Conclusion";
-import * as Hook from "../sections/hook/Hook";
-import * as References from "../sections/references/References";
-import * as Regression from "../sections/regression/Regression";
-import * as Storybook from "../sections/storybook/Storybook";
+import * as AutomatedTests from '../sections/automated/Automated';
+import * as Code from '../sections/code/Code';
+import * as Conclusion from '../sections/conclusion/Conclusion';
+import * as Hook from '../sections/hook/Hook';
+import * as References from '../sections/references/References';
+import * as Regression from '../sections/regression/Regression';
+import * as Storybook from '../sections/storybook/Storybook';
 
 export class Presentation extends React.Component {
   public render() {
@@ -42,7 +42,7 @@ export class Presentation extends React.Component {
         <Storybook.BDD />
         <Storybook.Easeness />
 
-        <Code.StorybookIntermission where="Formik">
+        <Code.StorybookIntermission where='Formik'>
           <Notes>
             The rep must have been previously downloaded
           </Notes>
@@ -56,7 +56,7 @@ export class Presentation extends React.Component {
         <Storybook.Contributing />
         <Storybook.EffinAwesome />
 
-        <Code.StorybookIntermission where="Storybook">
+        <Code.StorybookIntermission where='Storybook'>
           <Text>
             If there is connection
           </Text>

@@ -1,5 +1,5 @@
-import React from "react";
-import {Code, Slide, Text} from "spectacle";
+import React from 'react';
+import {Code, Slide, Text} from 'spectacle';
 
 export class StorybookIntermission extends React.Component<{ where: string }> {
   public render() {
