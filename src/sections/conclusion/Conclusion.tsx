@@ -1,5 +1,5 @@
-import React from "react";
-import {Heading, Slide, Text} from "spectacle";
+import React from 'react';
+import {Heading, Slide, Text} from 'spectacle';
 
 export class Then extends React.Component {
   public render() {

@@ -1,7 +1,7 @@
-import React from "react";
-import {Heading, Slide, Text} from "spectacle";
+import React from 'react';
+import {Heading, Slide, Text} from 'spectacle';
 
-import Fowler from "../../assets/images/fowler.jpg";
+import Fowler from '../../assets/images/fowler.jpg';
 
 export class What extends React.Component {
   public render() {
@@ -107,10 +107,10 @@ export class FrontIsDifferent extends React.Component {
     return (
       <Slide>
         <Heading>
-          Frontend is <span style={{ textDecoration: "underline" }}>not</span> backend
+          Frontend is <span style={{ textDecoration: 'underline' }}>not</span> backend
         </Heading>
         <Text>
-          Well, <span style={{ textDecoration: "underline" }}>duh</span>
+          Well, <span style={{ textDecoration: 'underline' }}>duh</span>
         </Text>
         <Text>Then visuals</Text>
       </Slide>

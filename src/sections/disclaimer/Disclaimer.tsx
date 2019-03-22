@@ -1,5 +1,5 @@
-import React from "react";
-import {Heading, List, Slide, Text} from "spectacle";
+import React from 'react';
+import {Heading, List, Slide, Text} from 'spectacle';
 
 export class Disclaimer extends React.Component {
   public render() {

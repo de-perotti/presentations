@@ -1,7 +1,12 @@
-import { storiesOf } from "@storybook/react";
-import React from "react";
+import { storiesOf } from '@storybook/react';
+import React from 'react';
+import {Presentation} from './Presentation';
 
-import { Presentation } from "./Presentation";
+const PresentationStories = storiesOf('Behold', module);
 
-storiesOf("Behold", module)
-  .add("the Presentation", () => <Presentation />);
+PresentationStories.add(
+  'the Presentation',
+  () => (
+    <Presentation/>
+  ),
+);

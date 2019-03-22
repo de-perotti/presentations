@@ -1,6 +1,6 @@
-import React from "react";
-import {Heading, List, ListItem, Notes, Slide, Text} from "spectacle";
-import UncleBobMartin from "../../assets/images/UncleBobMartin.jpg";
+import React from 'react';
+import {Heading, List, ListItem, Notes, Slide, Text} from 'spectacle';
+import UncleBobMartin from '../../assets/images/UncleBobMartin.jpg';
 
 export class Important extends React.Component {
   public render() {

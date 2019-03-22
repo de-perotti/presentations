@@ -1,13 +1,13 @@
-import React from "react";
-import {Fill, Fit, Heading, Image, Layout, Slide, Text} from "spectacle";
+import React from 'react';
+import {Fill, Fit, Heading, Image, Layout, Slide, Text} from 'spectacle';
 
-import MinimalExample from "../../assets/images/carbon.png";
-import StorybookIssues from "../../assets/images/issues.png";
-import ForksStars from "../../assets/images/likes.png";
-import TDDgif from "../../assets/images/storybook-addon-jest.gif";
-import StorybookTests from "../../assets/images/testtypes.png";
+import MinimalExample from '../../assets/images/carbon.png';
+import StorybookIssues from '../../assets/images/issues.png';
+import ForksStars from '../../assets/images/likes.png';
+import TDDgif from '../../assets/images/storybook-addon-jest.gif';
+import StorybookTests from '../../assets/images/testtypes.png';
 
-import * as Regression from "./regression/StorybookRegression";
+import * as Regression from './regression/StorybookRegression';
 
 export {
   Regression,
