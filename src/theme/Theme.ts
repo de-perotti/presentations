@@ -1,4 +1,7 @@
 import createTheme from 'spectacle/lib/themes/default';
+import _ from 'lodash';
+
+import themeJson from './theme.json';
 
 const colors = {
   primary: '#2f4f4f',
@@ -19,4 +22,13 @@ const fonts = {
   tertiary: defaultFont,
 };
 
-export default createTheme(colors, fonts);
+function getTheme() {
+  const theme = _.merge(createTheme(colors, fonts), themeJson);
+
+  // @ts-ignore
+  theme.screen.progress.bar.container.height = '5px';
+
+  return theme;
+}
+
+export const Theme = getTheme();

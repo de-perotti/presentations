@@ -1,7 +1,17 @@
 import React from 'react';
+import { Heading, Slide, Text } from "spectacle";
 
-export default class Cover extends React.Component {
+export class Cover extends React.Component {
   public render() {
-    return null;
+    return (
+      <Slide>
+        <Heading>
+          Storybook
+        </Heading>
+        <Text>
+          regression in the frontend
+        </Text>
+      </Slide>
+    );
   }
 }

@@ -1,7 +1,26 @@
 import React from 'react';
+import {Heading, Slide, Text, List} from "spectacle";
 
-export default class Disclaimer extends React.Component {
+export class Disclaimer extends React.Component {
   public render() {
-    return null;
+    return (
+      <Slide>
+        <Heading>
+          Disclaimer
+        </Heading>
+        <Text>
+          No impartiality
+        </Text>
+        <Text>
+          React
+        </Text>
+        <Text>
+          Typescript
+        </Text>
+        <Text>
+          You've tested before
+        </Text>
+      </Slide>
+    );
   }
 }

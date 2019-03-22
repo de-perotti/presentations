@@ -1,3 +1,3 @@
-export default async function preparePresentation() {
+export async function preparePresentation() {
   return;
 }

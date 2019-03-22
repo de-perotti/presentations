@@ -1,37 +1,107 @@
 import React from 'react';
-import { Deck } from 'spectacle';
+import {Notes, Text} from "spectacle";
 
-import Introduction from '../sections/introduction';
-import Hook from '../sections/hook';
-import Disclaimer from '../sections/disclaimer';
-import AutomatedTests from '../sections/automated';
-import Storybook from '../sections/storybook';
-import Regression from '../sections/regression';
-import Conclusion from '../sections/conclusion';
-import ReferencesSlide from '../sections/references';
-import WhoAmI from '../sections/whoami';
-import Cover from '../sections/cover';
+import { Deck } from "../components/Deck";
 
-import theme from '../theme';
+import { Cover } from '../sections/cover/Cover';
+import { Introduction } from '../sections/introduction/Introduction';
+import { WhoAmI } from '../sections/whoami/WhoAmI';
+import { Disclaimer } from '../sections/disclaimer/Disclaimer';
 
-export default class Presentation extends React.Component {
+import * as Hook from '../sections/hook/Hook';
+import * as Storybook from '../sections/storybook/Storybook';
+import * as AutomatedTests from '../sections/automated/Automated';
+import * as Code from '../sections/code/Code';
+import * as Regression from '../sections/regression/Regression';
+import * as Conclusion from '../sections/conclusion/Conclusion';
+import * as References from '../sections/references/References';
+
+export class Presentation extends React.Component {
   public render() {
     return (
-      <Deck
-        theme={theme}
-        transition={['zoom']}
-        progress="bar"
-      >
+      <Deck>
         <Cover />
+
         <Introduction />
-        <Hook />
-        <Disclaimer />
+
         <WhoAmI />
-        <AutomatedTests />
-        <Storybook />
-        <Regression />
-        <Conclusion />
-        <ReferencesSlide />
+
+        <Disclaimer />
+
+        <Hook.Important />
+        <Hook.Easy />
+        <Hook.LifeStyle />
+        <Hook.NotEverything />
+        <Hook.TestTrust />
+
+        <Storybook.What />
+        <Storybook.Simple />
+        <Storybook.Unifies />
+        <Storybook.TestTypes />
+        <Storybook.TDD />
+        <Storybook.BDD />
+        <Storybook.Easeness />
+
+        <Code.StorybookIntermission where="Formik">
+          <Notes>
+            The rep must have been previously downloaded
+          </Notes>
+        </Code.StorybookIntermission>
+
+        <Storybook.Views />
+        <Storybook.ShowCase />
+        <Storybook.Documentation />
+        <Storybook.OnBoarding />
+        <Storybook.HowToUse />
+        <Storybook.Contributing />
+        <Storybook.EffinAwesome />
+
+        <Code.StorybookIntermission where="Storybook">
+          <Text>
+            If there is connection
+          </Text>
+          <Notes>
+            <Text>
+              The rep must have been previously downloaded
+            </Text>
+            <Text>
+              https://storybooks-official.netlify.com/?path=/story/addons-jest--withtests
+            </Text>
+          </Notes>
+        </Code.StorybookIntermission>
+
+
+        <Regression.What />
+        <Regression.MentalHealth />
+        <Regression.Trust />
+        <Regression.Refactoring />
+        <Regression.ScoutsBoy />
+        <Regression.FrontIsDifferent />
+        <Regression.ChangeImpact />
+        <Regression.QuickAndAssuredAnalysis />
+        <Regression.PullRequests />
+
+        <Storybook.Regression.AllowsIt />
+        <Storybook.Regression.Options />
+        <Storybook.Regression.Loki />
+        <Storybook.Regression.FOSS />
+
+        <AutomatedTests.Diffs />
+        <AutomatedTests.Snapshots />
+        <AutomatedTests.Tolerances />
+        <AutomatedTests.Dockerize />
+
+        <Code.RegressionIntermission />
+
+        <Conclusion.Then />
+        <Conclusion.Headaches />
+        <Conclusion.Easy />
+        <Conclusion.Imagination />
+        <Conclusion.ToldYa />
+
+        <References.Git />
+        <References.ArtsAndDocs />
+        <References.Me />
       </Deck>
     );
   }
