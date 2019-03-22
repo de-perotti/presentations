@@ -2,7 +2,7 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 
-import App from '../src/App';
+import { Presentation } from '../src/presentation/Presentation';
 
 storiesOf('Behold', module)
-  .add('the App', () => <App />);
+  .add('the Presentation', () => <Presentation />);
